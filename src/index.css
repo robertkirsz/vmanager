@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-1
+    px-4
+    rounded-lg
+    shadow-md
+    focus:outline-none
+    focus:ring-2
+    focus:ring-offset-2
+    disabled:opacity-50
+    select-none
+    
+    text-gray-700
+    bg-white
+    hover:bg-gray-100
+    focus:ring-gray-400
+    focus:ring-offset-gray-300;
+  }
+
+  .btn-primary {
+    @apply text-white
+    bg-blue-600
+    hover:bg-blue-700
+    focus:ring-blue-500
+    focus:ring-offset-blue-200;
+  }
+
+  .btn-info {
+    @apply text-white
+    bg-blue-300
+    hover:bg-blue-400
+    focus:ring-blue-200
+    focus:ring-offset-blue-100;
+  }
+
+  .btn-success {
+    @apply text-white
+    bg-green-600
+    hover:bg-green-700
+    focus:ring-green-500
+    focus:ring-offset-green-200;
+  }
+
+  .btn-danger {
+    @apply text-white
+    bg-red-600
+    hover:bg-red-700
+    focus:ring-red-500
+    focus:ring-offset-red-200;
+  }
+
+  .content-wrapper {
+    @apply flex
+    w-full
+    max-w-6xl
+    mx-auto
+    p-4;
+  }
+
+  .input {
+    @apply appearance-none
+    border
+    border-transparent
+    w-full
+    py-1
+    px-4
+    bg-white
+    text-gray-700
+    placeholder-gray-400
+    shadow-md
+    rounded-lg
+    focus:outline-none
+    focus:ring-2
+    focus:ring-blue-600
+    focus:border-transparent;
+  }
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
