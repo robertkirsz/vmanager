@@ -12,7 +12,7 @@ yarn install
 
 ### Development
 
-To run the app, you need to these two commands running in separate terminal tabs:
+To run the app, you need these two commands running in separate terminal tabs:
 
 ```bash
 yarn serve
@@ -24,4 +24,4 @@ The second one makes the app available at [http://localhost:3000](http://localho
 
 ### Info
 
-The app is made with Create React App using TypeScript template. I'm using React Toolkit to serve global state, and styled-components with Tailwind for styling. For that I need to use Craco to rewire CRA in order to modify PostCSS config.
+The app is made with Create React App using TypeScript template. I'm using Redux Toolkit to serve global state and styled-components with Tailwind CSS for styling. For that, I need to use Craco to rewire CRA to modify PostCSS config.
